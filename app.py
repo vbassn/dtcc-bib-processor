@@ -158,8 +158,13 @@ with st.sidebar:
 
 
 # Main content area
-st.title("📚 DTCC Bib Processor")
-st.write("Upload a .bib file to validate bibliography entries against CrossRef database.")
+# Display logo and title in columns
+col1, col2 = st.columns([1, 8])
+with col1:
+    st.image("apple-touch-icon.png", width=80)
+with col2:
+    st.title("DTCC Bib Processor")
+    st.write("Upload a .bib file to validate bibliography entries against CrossRef database.")
 
 # File upload section
 MAX_FILE_SIZE = 5 * 1024 * 1024  # 5 MB in bytes
@@ -265,7 +270,7 @@ if uploaded_file is not None:
             invalid_count = results.get("invalid_entries", 0)
             st.metric("❌ Invalid", invalid_count, delta_color="inverse")
         with col4:
-            st.metric("⏱️ Time", f"{results.get('processing_time', 0):.1f}s")
+            st.metric("Time", f"{results.get('processing_time', 0):.1f}s")
 
         # Export buttons
         st.divider()
@@ -273,7 +278,7 @@ if uploaded_file is not None:
         with col1:
             json_str = json.dumps(results, indent=2)
             st.download_button(
-                label="📥 Download as JSON",
+                label="Download as JSON",
                 data=json_str,
                 file_name=f"validation_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
                 mime="application/json"
@@ -281,7 +286,7 @@ if uploaded_file is not None:
         with col2:
             csv_str = export_to_csv(results)
             st.download_button(
-                label="📥 Download as CSV",
+                label="Download as CSV",
                 data=csv_str,
                 file_name=f"validation_results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
                 mime="text/csv"
@@ -432,9 +437,9 @@ if uploaded_file is not None:
 
 else:
     # No file uploaded - show instructions
-    st.info("👆 Please upload a .bib file to begin validation")
+    st.info("Please upload a .bib file to begin validation")
 
-    with st.expander("ℹ️ How it works"):
+    with st.expander("How it works"):
         st.write("""
         This tool validates bibliography entries by:
 
