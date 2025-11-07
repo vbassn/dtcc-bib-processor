@@ -1,1 +1,276 @@
-/venv/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.cpython*
+*.cpython-*
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+.pyenv
+.pyenv-version
+pipenv-python
+
+# Testing
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+test-results/
+test-output/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+cython_debug/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/config.toml
+*.log
+
+# IDEs and Editors
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+*.vsix
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+out/
+.idea_modules/
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+[._]*.s[a-v][a-z]
+!*.svg
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+*~
+tags
+[._]*.un~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+.org-id-locations
+*_archive
+*_flymake.*
+/eshell/history
+/eshell/lastdir
+/elpa/
+*.rel
+/auto/
+.cask/
+dist/
+flycheck_*.el
+/server/
+.projectile
+.dir-locals.el
+/network-security.data
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Project specific
+# Validation outputs
+validation_results*.json
+validation_results*.csv
+*.bib.backup
+*.bib.bak
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Log files
+logs/
+*.log
+*.log.*
+debug.log
+error.log
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.pkl
+*.pickle
+
+# Configuration with secrets
+secrets.toml
+.secrets/
+config.local.toml
+*.env
+.env.*
+!.env.example
+!.env.template
+
+# API keys and credentials
+*_api_key*
+*_secret*
+credentials.json
+token.json
+auth.json
+
+# Cache directories
+cache/
+.cache/
+__pycache__/
+*.pyc
+
+# Output directories
+output/
+results/
+exports/
+
+# Documentation build
+docs/_build/
+docs/.doctrees/
+site/
+
+# Package management
+poetry.lock
+Pipfile.lock
+
+# Profiling
+*.prof
+*.lprof
+.prof/
+
+# Security
+*.pem
+*.key
+*.cert
+*.crt
+*.csr
+
+# Backup files
+*.backup
+*.bak
+*.old
+*.orig
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Claude Code specific
+.claude/
+claude-code-artifacts/
+
+# Any local test bibliography files (except sample.bib)
+test*.bib
+local*.bib
+private*.bib
+!sample.bib
